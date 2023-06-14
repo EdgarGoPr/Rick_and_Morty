@@ -1,0 +1,16 @@
+.Properties {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8;
+}
+
+.FondoCarta {
+    background-color: brown;
+    border: 3px;
+    border-color: black;
+    margin: 3;
+}
+
+.Imagen {
+    border: 5px;
+    size: 10px;
+}

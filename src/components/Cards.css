@@ -1,0 +1,11 @@
+.Cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Card {
+    width: 200px;
+    margin: 10px;
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+}
