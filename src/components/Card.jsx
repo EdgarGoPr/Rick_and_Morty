@@ -10,13 +10,12 @@ export default function Card(props) {
 
       <Link to={`/detail/${id}`} >
         <h3 className="card-name">{name}</h3>
+        <h2>{status}</h2>
+        <h2>{species}</h2>
+        <h2>{gender}</h2>
+        <h2>{origin}</h2>
+        <img src={image} alt="imagen"/>
       </Link>
-
-      <h2 className = 'Properties'>{status}</h2>
-      <h2 className = 'Properties'>{species}</h2>
-      <h2 className = 'Properties'>{gender}</h2>
-      <h2 className = 'Properties'>{origin}</h2>
-      <img src={image} alt="" className = 'Imagen'/>
     </div>
   );
 }

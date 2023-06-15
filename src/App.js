@@ -34,12 +34,11 @@ function App() {
          <NavBar onSearch={onSearch} />
 
          <Routes>
-            <Route path = '/About' element = {<About/>}/>
-            <Route path = '/Home' element = {<Cards characters={characters} onClose = {onClose}/>}/>
-            <Route path = 'Detail/:id' element = {<Detail/>}/>
+            <Route path = '/about' element = {<About/>}/>
+            <Route path = '/home' element = {<Cards characters={characters} onClose = {onClose}/>}/>
+            <Route path = '/detail/:id' element = {<Detail/>}/>
             <Route component = {Error}/>
          </Routes>
-         <Cards characters={characters} onClose = {onClose}/>
       </div>
    );
 }
