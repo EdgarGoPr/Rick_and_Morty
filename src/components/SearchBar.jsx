@@ -19,7 +19,9 @@ export default function SearchBar({onSearch}) {
   return (
     <div className = 'search'>
       <label>Insert Id  </label>
-      <input type = 'search' onChange = {handleChange} 
+      <input 
+      type = 'search' 
+      onChange = {handleChange} 
       value = {id} 
       name = 'id' 
       placeholder = 'insert id ...'/>

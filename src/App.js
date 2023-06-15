@@ -24,7 +24,7 @@ function App() {
       });
    }
    function onClose(id) {
-      const newCharacters = characters.filter((ch) => ch,id !== id);
+      const newCharacters = characters.filter((ch) => ch.id !== id);
       setCharacters(newCharacters)
    }
 
