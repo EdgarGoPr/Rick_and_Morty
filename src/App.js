@@ -3,6 +3,9 @@ import Cards from './components/Cards.jsx';
 import NavBar from './components/NavBar.jsx';
 import { useState } from 'react';
 import axios from 'axios';
+import { Routes, Route } from 'react-router-dom'
+import About from './components/About.jsx'
+import Detail from './components/Detail.jsx'
 
 
 function App() {
@@ -26,7 +29,14 @@ function App() {
 
    return (
       <div className='App'>
+
          <NavBar onSearch={onSearch} />
+
+         <Routes>
+            <Route path = '/About' element = {<About/>}/>
+            <Route path = '/Home' element = {<Cards characters={characters} onClose = {onClose}/>}/>
+            <Route path = 'Detail/:id' element = {<Detail/>}/>
+         </Routes>
          <Cards characters={characters} onClose = {onClose}/>
       </div>
    );

@@ -8,7 +8,6 @@ export default function Cards(props) {
     <div className = 'Cards'>
       {characters.map((character) => (
         <Card
-          image={character.image}
           key={character.id}
           name={character.name}
           status={character.status}
@@ -16,8 +15,9 @@ export default function Cards(props) {
           gender={character.gender}
           origin={character.origin.name}
           onClose={() => window.alert("Emulamos que se cierra la card")}
+          image={character.image}
           className = 'Card'
-        ></Card>
+        />
       ))}
     </div>
   );
