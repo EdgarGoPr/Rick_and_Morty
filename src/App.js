@@ -16,7 +16,12 @@ function App() {
   const [access, setAccess] = useState(false);
   const EMAIL = "ejemplo@gmail.com";
   const PASSWORD = "unaPassword";
-
+  
+  function logout (){
+    setAccess(false);
+    navigate('/');
+  }
+  
   function login(userData) {
     if (userData.password === PASSWORD && userData.email === EMAIL) {
       setAccess(true);
@@ -27,6 +32,7 @@ function App() {
   useEffect(() => {
     !access && navigate("/");
   }, [access]);
+
 
   function onSearch(id) {
     axios(`https://rickandmortyapi.com/api/character/${id}`).then(
@@ -48,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      {location.pathname !== "/" && <NavBar onSearch={onSearch} />}
+      {location.pathname !== "/" && <NavBar logout = {logout} onSearch={onSearch} />}
       {/* {location.pathname !== "/" ? <NavBar onSearch={onSearch} />} */}
       <Routes>
         <Route path="/" element={<Form />} />
