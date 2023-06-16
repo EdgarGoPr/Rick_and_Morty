@@ -1,0 +1,39 @@
+.DetailPadre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.Detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgba(46, 163, 128, 1), rgba(46, 163, 128, 0));
+  border: 3px solid rgba(46, 163, 128, 1);
+}
+
+.Name {
+  font-family: "Acme", sans-serif;
+  font-size: 40px;
+}
+
+.Data {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.CartaDetail {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+
+.Img {
+  border-radius: 50%;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: auto;
+}

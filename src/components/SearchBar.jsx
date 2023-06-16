@@ -25,7 +25,7 @@ export default function SearchBar({onSearch}) {
       value = {id} 
       name = 'id' 
       placeholder = 'insert id ...'/>
-      <button onClick={add}>Agregar</button> 
+      <button onClick={add}>Add</button> 
       <button onClick={randomChar}>Random Character</button> 
     </div>
   );
