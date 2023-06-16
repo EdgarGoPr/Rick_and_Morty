@@ -2,7 +2,6 @@ import React from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Card from "./Card";
 
 export default function Detail() {
   const { id } = useParams();
@@ -23,16 +22,12 @@ export default function Detail() {
 
   return (
     <div>
-      <Card 
-      key = {character?.id}
-      id = {character?.id}
-      name = {character?.name}
-      status = {character?.status}
-      species = {character?.species}
-      gender = {character?.gender}
-      origin = {character?.origin?.name}
-      image = {character?.image}
-      />
+      <h2>{character?.name}</h2>
+      <h2>{character?.status}</h2>
+      <h2>{character?.species}</h2>
+      <h2>{character?.gender}</h2>
+      <h2>{character?.origin?.name}</h2>
+      <img src = {character?.image} alt = ''/>
     </div>
   );
 }
