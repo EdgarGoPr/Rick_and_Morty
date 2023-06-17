@@ -18,7 +18,7 @@ export default function SearchBar({onSearch}) {
   }
   return (
     <div className = 'search'>
-      <label>Insert Id  </label>
+      <label htmlFor='search-input'>Insert Id  </label>
       <input 
       type = 'search' 
       onChange = {handleChange} 
@@ -26,7 +26,7 @@ export default function SearchBar({onSearch}) {
       name = 'id' 
       placeholder = 'insert id ...'/>
       <button onClick={add}>Add</button> 
-      <button onClick={randomChar}>Random Character</button> 
+      <button onClick={randomChar}>Ran</button> 
     </div>
   );
 }
