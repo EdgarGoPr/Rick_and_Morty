@@ -8,15 +8,15 @@ export default function Cards(props) {
     <div className = 'Cards'>
       {characters.map((character) => (
         <Card
-          key={character.id}
+          // key={character.id}
           id = {character.id}
+          image={character.image}
           name={character.name}
           // status={character.status}
           // species={character.species}
           // gender={character.gender}
           // origin={character.origin.name}
           onClose={onClose}
-          image={character.image}
           className = 'Card'
         />
       ))}

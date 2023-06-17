@@ -6,15 +6,15 @@ export default function Card(props) {
 
   return (
     <div className = 'FondoCarta'>
-      <button onClick={() => onClose(id)}>X</button>
+      <button onClick={() => onClose(id)} className = 'BotonX'>X</button>
 
       <Link to={`/detail/${id}`} >
+        <img src={image} alt="imagen" className = 'ImagenPers'/>
         <h3 className="card-name">{name}</h3>
         <h2>{status}</h2>
         <h2>{species}</h2>
         <h2>{gender}</h2>
         <h2>{origin}</h2>
-        <img src={image} alt="imagen"/>
       </Link>
     </div>
   );

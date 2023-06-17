@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 10px;
+  transform: 'scale(1)';
+  background: linear-gradient(to right, rgb(54, 116, 211), rgb(17, 85, 141), rgb(46, 68, 146)); 
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-left button,
+.nav-right button {
+  margin-right: 10px;
+}

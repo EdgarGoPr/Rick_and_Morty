@@ -6,7 +6,6 @@ export const ValidateEmail = (mail) => {
   ) {
     return true;
   }
-  alert("Please, enter a valid email.");
   return false;
 };
 
@@ -15,7 +14,6 @@ export const CheckPassword = (password) => {
   if (password.match(passw)) {
     return true;
   } else {
-    alert("Unsafe password");
     return false;
   }
 };

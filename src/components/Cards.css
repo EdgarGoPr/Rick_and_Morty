@@ -1,20 +1,14 @@
 .Cards {
-  /* display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-evenly;
-    margin: 0 auto; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  row-gap: 50px;
-  column-gap: 50px;
-  max-width: 1440px;
-  margin: auto;
+  /* gap: 1rem; */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  row-gap: 40px;
+  column-gap: 40px;
+  max-width: 1640px;
+  margin: 3rem;
 }
 .Card {
-  width: 200px;
-  margin: 10px;
-  background-color: green;
-  padding: 10px;
+  width: 150px;
+  height: 100px;
   border-radius: 5px;
 }
