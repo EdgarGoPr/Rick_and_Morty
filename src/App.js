@@ -54,6 +54,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className = 'Titulo'/>
       {location.pathname !== "/" && <NavBar logout = {logout} onSearch={onSearch} />}
       {/* {location.pathname !== "/" ? <NavBar onSearch={onSearch} />} */}
       <Routes>

@@ -7,3 +7,37 @@
   min-height: 100vh;
 
 }
+
+/* .Titulo {
+  position: relative;
+  z-index: 2;
+  background-color: black;
+  background-image: url('./components/NavBar/Titulo_rick_y_morty.gif');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 200px; 
+  margin: 0 auto; 
+} */
+
+/* .Titulo::before,
+.Titulo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: black;
+  z-index: -1;
+}
+
+.Titulo::before {
+  width: 200%;
+  left: -200%;
+}
+
+.Titulo::after {
+  width: 200%;
+  right: -200%;
+} */

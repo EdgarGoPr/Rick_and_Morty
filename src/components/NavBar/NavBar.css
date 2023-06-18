@@ -1,8 +1,9 @@
 .nav {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(to right, rgb(54, 116, 211), rgb(17, 85, 141), rgb(46, 68, 146)); 
+  background: linear-gradient(to right, #6c757d, #495057, #343a40); 
   height: 80px;
 }
 
@@ -11,12 +12,22 @@
   gap: 1rem;
 }
 
-.Home {
-  background-image: url('./Casa_2.png');
+
+.MeeseekAsomandose {
+  margin-top: 30px;
+  width: 150px;
+  height: 80px;
+  background-image: url('./Meeseek.png');
   background-size: cover;
   background-position: center;
-  height: 50px;
-  width: 50px;
+}
+
+.Home {
+  background-image: url('./Casa_2.png');
+  background-size: 90%;
+  background-position: center;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -26,10 +37,10 @@
 
 .About {
   background-image: url('./Signo_pregunta.png');
-  background-size: cover;
+  background-size: 90%;
   background-position: center;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -39,10 +50,10 @@
 
 .LogOut {
   background-image: url('./Flecha_volver.png');
-  background-size: cover;
+  background-size: 90%;
   background-position: center;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   display: flex;
   justify-content: center;

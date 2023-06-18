@@ -1,12 +1,15 @@
-.AboutPadre {
-  background-image: url('./SociableActiveHornshark-mobile.gif');
+.ImagenTitulo {
+  background-image: url('./Titulo_rick_y_morty.gif');
   height: 1000px;
   background-repeat: no-repeat;
-  background-size: 100%
+  background-size: 100%;
+  margin-top: 100px
+
   ;
-}
+} 
 
 .Firma {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Patrick Hand', cursive;  
   font-size: 30px;
+  margin-top: 50px;
 }

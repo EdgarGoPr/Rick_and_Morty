@@ -6,10 +6,11 @@ Colocar datos propios, es completamente libre
 */
 export default function About() {
   return (
-    <div className = 'AboutPadre'>
+    <div >
       <div className = 'Firma'>
         Creado por Edgar Gonzalez de Prada
       </div>
+      <div className = 'ImagenTitulo'/>
     </div>
   );
 }
