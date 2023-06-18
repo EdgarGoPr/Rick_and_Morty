@@ -1,107 +1,64 @@
-/* .nav {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  padding: 10px;  
-  transform: 'scale(1)';
-  background: linear-gradient(to right, rgb(54, 116, 211), rgb(17, 85, 141), rgb(46, 68, 146)); 
-  height: 80px;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}  */
-/* .nav-left {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-right: auto;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-left: auto;
-}
-
-.nav-left button,
-.nav-right button {
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: rgb(28, 126, 165);
-  border-radius: 50%;
-  transform: scale(1.5);
-  border: 1px solid black;
-} */
-
-/* .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  transform: scale(1);
-  background: linear-gradient(to right, rgb(54, 116, 211), rgb(17, 85, 141), rgb(46, 68, 146));
-  height: 80px;
-} */
-
-/* .nav-left {
-  display: flex;
-  align-items: center;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.nav-left .search {
-  margin-right: 20px;
-} */
-
-/* .nav-left button,
-.nav-right button {
-  margin-right: 20px;
-  margin-left: 20px;
-} */
-
 .nav {
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  /* padding: 10px; */
-  transform: 'scale(1)';
+  justify-content: space-around;
+  align-items: center;
   background: linear-gradient(to right, rgb(54, 116, 211), rgb(17, 85, 141), rgb(46, 68, 146)); 
   height: 80px;
 }
 
-.nav-left {
+.links_container {
   display: flex;
-  align-items: center;
-  margin-right: auto;
+  gap: 1rem;
 }
 
-.nav-right {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.nav-left button,
-.nav-right button {
-  margin-right: 20px;
-  margin-left: 20px;
-  background-color: rgb(28, 126, 165);
+.Home {
+  background-image: url('./Casa_2.png');
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  transform: scale(1.5);
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform (0,2);
 }
+
+.About {
+  background-image: url('./Signo_pregunta.png');
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform (0,2);
+}
+
+.LogOut {
+  background-image: url('./Flecha_volver.png');
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform (0,2);
+}
+
+.Home:hover,
+.About:hover,
+.LogOut:hover {
+  transform: scale(1.1);
+}
+
+.Home:active,
+.About:active,
+.LogOut:active {
+  transform: scale(0.9);
+}
+

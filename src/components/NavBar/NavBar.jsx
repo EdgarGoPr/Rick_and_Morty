@@ -6,18 +6,16 @@ import {Link} from 'react-router-dom'
 export default function NavBar({onSearch, logout}) {
   return (
     <div className="nav">
-      <div className="nav-left">
+        <button onClick={logout} className = 'LogOut'></button>
         <SearchBar onSearch={onSearch}/>
-        <button onClick={logout}>LogOut</button>
-      </div>
-      <div className="nav-right">
-        <Link to='/about'>
-          <button>About</button>
-        </Link>
-        <Link to='/home'>
-          <button>Home</button>
-        </Link>
-      </div>
+        <div className="links_container">
+          <Link to='/home'>
+            <button className = 'Home'></button>
+          </Link>
+          <Link to='/about'>
+            <button className = 'About'></button>
+          </Link>
+        </div>
     </div>
   );
 }

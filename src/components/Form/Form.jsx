@@ -60,7 +60,7 @@ export default function Form() {
     // </div>
     <div className="Body">
       <div class="center">
-        <h1>Our Newsletter</h1>
+        <h1>Need Help? Can do!</h1>
         <form onSubmit={handleFormSubmit}>
           <div class="inputbox">
             <input

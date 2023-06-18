@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: linear-gradient(to right, rgba(46, 163, 128, 1), rgba(46, 163, 128, 0));
+  background: linear-gradient(to right, #1d4e89, #3fc1c0 );
   border: 3px solid rgba(46, 163, 128, 1);
 }
 
