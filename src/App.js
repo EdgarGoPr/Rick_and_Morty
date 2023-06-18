@@ -1,12 +1,12 @@
 import "./App.css";
-import Cards from "./components/Cards.jsx";
-import NavBar from "./components/NavBar.jsx";
+import Cards from "./components/Cards/Cards.jsx";
+import NavBar from "./components/NavBar/NavBar.jsx";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import About from "./components/About.jsx";
-import Detail from "./components/Detail.jsx";
-import Error from "./components/Error";
-import Form from "./components/Form";
+import About from "./components/About/About.jsx";
+import Detail from "./components/Detail/Detail.jsx";
+import Error from "./components/Error/Error";
+import Form from "./components/Form/Form";
 import { useLocation, useNavigate, Routes, Route  } from "react-router-dom";
 
 function App() {
