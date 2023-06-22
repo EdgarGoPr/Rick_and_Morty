@@ -7,11 +7,14 @@ export default function NavBar({ onSearch, logout }) {
   return (
     <div className="nav">
       <button onClick={logout} className="LogOut"></button>
-      <div className = 'MeeseekAsomandose'></div>
+      <div className="MeeseekAsomandose"></div>
       <SearchBar onSearch={onSearch} />
       <div className="links_container">
         <Link to="/home">
           <button className="Home"></button>
+        </Link>
+        <Link to="/favorites">
+          <button className="Favorites"></button>
         </Link>
         <Link to="/about">
           <button className="About"></button>

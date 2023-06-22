@@ -61,15 +61,30 @@
   transition: transform (0,2);
 }
 
+.Favorites {
+  background-image: url('./Fav.png');
+  background-size: 90%;
+  background-position: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform (0,2);
+}
+
 .Home:hover,
 .About:hover,
-.LogOut:hover {
+.LogOut:hover,
+.Favorites:hover {
   transform: scale(1.1);
 }
 
 .Home:active,
 .About:active,
-.LogOut:active {
+.LogOut:active,
+.Favorites:active {
   transform: scale(0.9);
 }
 

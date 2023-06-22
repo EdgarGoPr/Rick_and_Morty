@@ -6,11 +6,45 @@
 }
 
 .Detail {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: linear-gradient(to right, #1d4e89, #3fc1c0 );
+  background: linear-gradient(to right, #007f5f, #2b9348, #55a630);
   border: 3px solid rgba(46, 163, 128, 1);
+}
+
+.Detail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.Overlay {
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  display: flex;
+}
+
+.Title,
+.Icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  margin-right: -10px;
+}
+
+.Title {
+  background-image: url("./TituloRyMDetail.png");
+  margin-right: 20px;
+  margin-top: 25px;
+  transform: scale(1.5);
+}
+
+.Icon {
+  background-image: url("./SiluetasRyM.png");
 }
 
 .Name {
@@ -30,10 +64,12 @@
 }
 
 .Img {
-  border-radius: 50%;
+  margin-top: 60px;
+  margin-left: 40px;
+  border-radius: 20%;
   border: 3px solid black;
   display: flex;
   align-items: center;
-  height: 400px;
+  height: 300px;
   width: auto;
 }

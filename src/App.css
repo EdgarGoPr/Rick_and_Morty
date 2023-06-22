@@ -1,43 +1,4 @@
 .App {
   text-align: center;
-  /* background-color: #295264; */
-  /* background-image: url("https://i.pinimg.com/564x/a6/01/22/a601222fff010236e9d629e7aa953549.jpg");
-  background-repeat: repeat; */
-  background: linear-gradient(to right, #74b3ce,#004346);
-  min-height: 100vh;
 
 }
-
-/* .Titulo {
-  position: relative;
-  z-index: 2;
-  background-color: black;
-  background-image: url('./components/NavBar/Titulo_rick_y_morty.gif');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 20%;
-  height: 200px; 
-  margin: 0 auto; 
-} */
-
-/* .Titulo::before,
-.Titulo::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  background-color: black;
-  z-index: -1;
-}
-
-.Titulo::before {
-  width: 200%;
-  left: -200%;
-}
-
-.Titulo::after {
-  width: 200%;
-  right: -200%;
-} */

@@ -20,9 +20,9 @@ export default function Detail() {
     );
     return setCharacter({});
   }, [id]);
-
+  
   return (
-    <div className = 'DetailPadre'>
+    <div className="DetailPadre">
       <div className="Detail">
         <img src={character?.image} alt="" className="Img" />
         <div className="CartaDetail">
@@ -31,6 +31,10 @@ export default function Detail() {
           <h2 className="Data">Species: {character?.species}</h2>
           <h2 className="Data">Gender: {character?.gender}</h2>
           <h2 className="Data">Origin: {character?.origin?.name}</h2>
+        </div>
+        <div className="Overlay">
+          <div className="Title" />
+          <div className="Icon" />
         </div>
       </div>
     </div>
