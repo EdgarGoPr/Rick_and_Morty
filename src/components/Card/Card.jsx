@@ -1,21 +1,22 @@
 import "./Card.css";
 import { Link } from "react-router-dom";
-import { connect } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addFav, removeFav } from "../Redux/Actions";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
-function Card(props) {
-  const { id, name, status, species, gender, origin, image, onClose, addFav, removeFav, myFavorites } = props;
+export default function Card(props) {
+  const { id, name, status, species, gender, origin, image, onClose } = props;
   const [isFav, setIsFav] = useState(false);
+  const {myFavorites} = useSelector((s) => s)
+  const dispatch = useDispatch()
 
   const handleFavorite = function () {
     if (isFav) {
       setIsFav(false);
-      removeFav(id)
+      dispatch(removeFav(id))
     } else {
       setIsFav(true);
-      addFav(props)
+      dispatch(addFav(props))
     }
   };
 
@@ -27,9 +28,14 @@ function Card(props) {
     });
   }, [myFavorites]);
 
+  function superClose (){
+    onClose(id)
+    dispatch(removeFav(id))
+  }
+
   return (
     <div className="FondoCarta">
-      <button onClick={() => onClose(id)} className="BotonX"></button>
+      <button onClick={() => superClose(id)} className="BotonX"></button>
       {isFav ? (
         <button onClick={handleFavorite} className="BotonFav">❤️</button>
       ) : (
@@ -47,19 +53,19 @@ function Card(props) {
   );
 }
 
-function mapState(state) {
-  return {
-    myFavorites: state.myFavorites,
-  };
-}
+// function mapState(state) {
+//   return {
+//     myFavorites: state.myFavorites,
+//   };
+// }
 
-function mapDispatch(dispatch) {
-  return {
-    addFav: (char) => dispatch(addFav(char)),
-    removeFav: (id) => dispatch(removeFav(id)),
-  };
-}
+// function mapDispatch(dispatch) {
+//   return {
+//     addFav: (char) => dispatch(addFav(char)),
+//     removeFav: (id) => dispatch(removeFav(id)),
+//   };
+// }
 
-export default connect(mapState, mapDispatch)(Card);
+// export default connect(mapState, mapDispatch)(Card);
 
 //* Redux invoca mapState(state), le pasa el state y crea props en Card con lo que retorna el mapState
